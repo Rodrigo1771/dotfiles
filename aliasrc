@@ -8,6 +8,6 @@ alias b="cd .."
 alias dl="cd $HOME/Downloads && ll"
 alias doc="cd $HOME/Documents && ll"
 
-alias sz="source $HOME/.zshrc"
+alias sz="source $HOME/.config/zsh/.zshrc"
 
 

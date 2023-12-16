@@ -5,7 +5,14 @@ export ZSH="$HOME/.oh-my-zsh"
 ZSH_THEME="robbyrussell"
 
 # Plugins
-plugins=(git)
+plugins=(git vi-mode)
+
+# vi-mode plugin settings
+export KEYTIMEOUT=10
+VI_MODE_RESET_PROMPT_ON_MODE_CHANGE=true # Update cursor
+VI_MODE_SET_CURSOR=true  # Update cursor
+MODE_INDICATOR=" "  # No mode indicator
+VI_MODE_CURSOR_INSERT=5  # Blinking line
 
 # Cleanup
 export LESSHISTFILE="-"
