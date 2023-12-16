@@ -5,7 +5,7 @@ export ZSH="$HOME/.oh-my-zsh"
 ZSH_THEME="robbyrussell"
 
 # Plugins
-plugins=(git vi-mode)
+plugins=(vi-mode)
 
 # vi-mode plugin settings
 export KEYTIMEOUT=10
@@ -21,6 +21,6 @@ export HISTFILE="/dev/null"
 # Source it
 source $ZSH/oh-my-zsh.sh
 
-# Aliases
+# Aliases (aliases for git are defined in the $HOME/.config/git/config file)
 [ -f "$HOME/.config/aliasrc" ] && source "$HOME/.config/aliasrc"
 
