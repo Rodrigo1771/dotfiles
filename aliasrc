@@ -1,0 +1,13 @@
+alias vim="nvim"
+
+alias ls="gls --color=auto --group-directories-first -v"
+alias ll="gls --color=auto --group-directories-first -vlh"
+alias la="gls --color=auto --group-directories-first -vlhA"
+alias b="cd .."
+
+alias dl="cd $HOME/Downloads && ll"
+alias doc="cd $HOME/Documents && ll"
+
+alias sz="source $HOME/.zshrc"
+
+
