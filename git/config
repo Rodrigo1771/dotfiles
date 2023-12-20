@@ -4,7 +4,7 @@
 [core]
 	editor = nvim
 [alias]
-	gs = git status
+	gst = git status
 	gacm = !git add . && git commit -m
 	gpush = git push
 	gpull = git pull
