@@ -23,9 +23,14 @@ vim.opt.rtp:prepend(lazypath)
 require("lazy").setup({
 	{
 		"neovim/nvim-lspconfig",
+		event = { "BufReadPre", "BufNewFile" },
+  		dependencies = { "hrsh7th/cmp-nvim-lsp" },
  		config = function ()
 			local lspconfig = require('lspconfig')
-			lspconfig["texlab"].setup({})
+			local cmp_nvim_lsp = require("cmp_nvim_lsp")
+			lspconfig["texlab"].setup({
+				capabilities = cmp_nvim_lsp.default_capabilities()
+			})
 		end,
 	},
 	{
@@ -63,7 +68,12 @@ require("lazy").setup({
 			})
 		end
 	},
-	"lervag/vimtex",
+	{
+		"lervag/vimtex",
+		config = function ()
+			vim.g.vimtex_compiler_latexmk = { aux_dir = 'aux/', out_dir = 'out/' }
+		end
+	},
 	{
 		"reedes/vim-pencil",
  		config = function ()

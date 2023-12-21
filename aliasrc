@@ -9,4 +9,12 @@ alias dl="cd $HOME/Downloads && ll"
 alias doc="cd $HOME/Documents && ll"
 alias conf="cd $HOME/.config && ll"
 
+alias gs="git status"
+alias gacm="git add . && git commit -m"
+alias gpush="git push"
+alias gpull="git pull"
+alias gb="git branch"
+alias gch="git checkout"
+alias gd="git diff"
+
 alias sz="source $HOME/.config/zsh/.zshrc"
