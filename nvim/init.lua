@@ -50,8 +50,8 @@ require("lazy").setup({
 			  	},
 			  	mapping = cmp.mapping.preset.insert({
 					["<TAB>"] = cmp.mapping.select_next_item(), 		-- next suggestion
-					["<C-Space>"] = cmp.mapping.complete(), 			-- show completion suggestions
-					["<CR>"] = cmp.mapping.confirm({ select = false }), -- select completion
+					["<C-Space>"] = cmp.mapping.complete(), 			-- show suggestions
+					["<CR>"] = cmp.mapping.confirm({ select = false }), -- select suggestion
 			  	}),
 			  	sources = cmp.config.sources({
 					{ name = "nvim_lsp" },
@@ -71,7 +71,8 @@ require("lazy").setup({
 	{
 		"lervag/vimtex",
 		config = function ()
-			vim.g.vimtex_compiler_latexmk = { aux_dir = 'aux/', out_dir = 'out/' }
+			vim.g.vimtex_compiler_latexmk = { aux_dir = 'Out/Aux/', out_dir = 'Out/' }
+			vim.g.vimtex_quickfix_enabled = 0
 		end
 	},
 	{
