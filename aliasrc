@@ -7,6 +7,7 @@ alias b="cd .."
 
 alias dl="cd $HOME/Downloads && ll"
 alias doc="cd $HOME/Documents && ll"
+alias proj="cd $HOME/Documents/projects && ll"
 alias diss="cd \"$HOME/Documents/uni/Dissertação de Mestrado/dissertation\" && ll"
 alias conf="cd $HOME/.config && ll"
 
