@@ -2,3 +2,4 @@ git/github-recovery-codes.enc
 zsh/.zsh_sessions
 zsh/.zcompdump*
 iterm2/*
+.DS_Store

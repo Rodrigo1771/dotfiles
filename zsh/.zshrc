@@ -17,6 +17,7 @@ VI_MODE_CURSOR_INSERT=5  # Blinking line
 # Cleanup
 export LESSHISTFILE="-"
 export HISTFILE="/dev/null"
+export LANG=en_US.UTF-8
 
 # Source it
 source $ZSH/oh-my-zsh.sh
