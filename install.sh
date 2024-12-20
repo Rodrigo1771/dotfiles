@@ -41,10 +41,6 @@ link_dotfiles() {
 		ln -nsf "$PWD/$f" ~/."$f"
 	done
 
-	# link sshconfig (not to ~/ but to ~/.ssh/)
-	printf '%25s -> %s\n' "~/${PWD/#$HOME\//}/${f}" "~/.ssh/config"
-	ln -nsf "$PWD/$f" ~/.ssh/config
-
     echo ""
 }
 
