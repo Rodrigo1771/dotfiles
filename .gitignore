@@ -1,5 +1,9 @@
-git/github-recovery-codes.enc
-zsh/.zsh_sessions
-zsh/.zcompdump*
-iterm2/*
+# MacOS file
 .DS_Store
+
+# App dirs
+iterm2/
+oh-my-zsh/
+
+# Random
+zsh/.zcompdump*
