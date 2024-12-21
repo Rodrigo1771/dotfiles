@@ -4,6 +4,7 @@
 # App dirs
 iterm2/
 oh-my-zsh/
+vscode/
 
 # Random
 zsh/.zcompdump*

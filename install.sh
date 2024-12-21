@@ -3,6 +3,7 @@
 dotfiles=(
 	gitconfig
 	tmux.conf
+	vscode
 	zprofile
 	zshrc
 	# sshconfig
@@ -34,6 +35,9 @@ install_packages(){
 
 link_dotfiles() {
     echo "[INSTALL.SH] Linking dotfiles:"
+
+	# Not tracking it in this repo, just making sure HOME is not cluttered
+	mv ~/.vscode vscode
 
 	for f in "${dotfiles[@]}"; do
 		[[ -d ~/.$f && ! -L ~/.$f ]] && rm -r ~/."$f"
