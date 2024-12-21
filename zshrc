@@ -18,6 +18,8 @@ VI_MODE_CURSOR_INSERT=5  # Blinking line
 export LESSHISTFILE="-"
 export HISTFILE="/dev/null"
 export LANG=en_US.UTF-8
+export ZSH_COMPDUMP="$HOME/.cache/.zcompdump-Rodrigo's Macbook Air-${ZSH_VERSION}"
+
 
 # Source it
 source $ZSH/oh-my-zsh.sh
