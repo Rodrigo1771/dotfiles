@@ -3,6 +3,7 @@
 	email = 62312699+Rodrigo1771@users.noreply.github.com
 [core]
 	editor = nvim
+	pager = delta
 [init]
     defaultBranch = main
 [filter "lfs"]
@@ -10,3 +11,13 @@
 	smudge = git-lfs smudge -- %f
 	process = git-lfs filter-process
 	required = true
+[interactive]
+	diffFilter = delta --color-only
+[delta]
+	navigate = true
+	dark = true
+	side-by-side=true
+[merge]
+	conflictstyle = diff3
+[diff]
+	colorMoved = default

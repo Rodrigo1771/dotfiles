@@ -33,6 +33,22 @@ install_packages(){
     echo ""
 }
 
+install_themes(){
+    echo "[INSTALL.SH] Installing themes and fonts"
+	#
+	# install iTerm2 gruvbox theme
+	mkdir -p ~/.config/iterm2/
+	curl https://github.com/herrbischoff/iterm2-gruvbox/blob/master/gruvbox.itermcolors > ~/.config/iterm2/
+    echo "[INSTALL.SH] Note: Import iTerm2 gruvbox theme in iTerm2 > Settings > Profiles > Colors > Color Presets"
+    echo "[INSTALL.SH] Note: Import iTerm2  font in iTerm2 > Settings > Profiles > Text > Font"
+
+	# install eza gruvbox theme
+	mkdir -p ~/.config/eza/
+	curl https://github.com/eza-community/eza-themes/blob/main/themes/gruvbox-dark.yml > ~/.config/eza/theme.yml
+
+    echo ""
+}
+
 link_dotfiles() {
     echo "[INSTALL.SH] Linking dotfiles:"
 
@@ -65,7 +81,10 @@ if [ $# -eq 0 ]; then
     # No arguments were passed
 	install_oh-my-zsh
 	install_packages
+	install_themes
 	link_dotfiles
+    echo "[INSTALL.SH] Note: Import iTerm2 gruvbox theme in iTerm2 > Settings > Profiles > Colors > Color Presets"
+    echo "[INSTALL.SH] Note: Import iTerm2  font in iTerm2 > Settings > Profiles > Text > Font"
 else
 	while [[ "$#" -gt 0 ]]; do
 		case "$1" in

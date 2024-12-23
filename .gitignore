@@ -2,9 +2,12 @@
 .DS_Store
 
 # App dirs
-iterm2/
+iterm2/*
 oh-my-zsh/
 vscode/
 
 # Random
 zsh/.zcompdump*
+
+# Exception for iTerm2 theme because it's custom
+!iterm2/gruvbox.itermcolors

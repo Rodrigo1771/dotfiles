@@ -1,9 +1,11 @@
 alias vim="nvim"
+alias cat="bat"
 
-alias ls="gls --color=auto --group-directories-first -v"
-alias ll="gls --color=auto --group-directories-first -vlh"
-alias la="gls --color=auto --group-directories-first -vlhA"
 alias b="cd .."
+alias ls="eza --group-directories-first --color=always --git --icons=always --no-filesize --no-time --no-user --no-permissions"
+alias ll="eza --group-directories-first --color=always --git --icons=always --no-filesize --no-time --no-user --no-permissions --long"
+alias la="eza --group-directories-first --color=always --git --icons=always --no-filesize --no-time --no-user --no-permissions --long --all"
+alias tree="eza --tree --color=always --icons=always"
 
 alias dl="cd $HOME/Downloads && ll"
 alias doc="cd $HOME/Documents && ll"
