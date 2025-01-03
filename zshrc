@@ -25,6 +25,6 @@ export ZSH_COMPDUMP="$HOME/.cache/.zcompdump-Rodrigo's Macbook Air-${ZSH_VERSION
 source $ZSH/oh-my-zsh.sh
 
 # Fzf configs and aliases
-[ -f "$HOME/.config/fzf.zsh" ] && source "$HOME/.config/fzf.zsh"
-[ -f "$HOME/.config/alias.zsh" ] && source "$HOME/.config/alias.zsh"
+[ -f "$HOME/.config/zsh/fzf.zsh" ] && source "$HOME/.config/zsh/fzf.zsh"
+[ -f "$HOME/.config/zsh/alias.zsh" ] && source "$HOME/.config/zsh/alias.zsh"
 
